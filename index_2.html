@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warkusz</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        table {
+			border: solid 1px;
+			border-collapse: collapse;
+			padding: 0;
+			margin: 0;
+            width: 100%;
+            height: 100%;
+		}
+        iframe {
+            border: 0;
+        }
+        .rowspan {
+			text-align: center;
+            justify-content: center;
+		}
+
+		.colspan {
+			text-align: center;
+			justify-content: center;
+		}
+        .center {
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+	<table>
+		<tbody>
+            <tr>
+				<td colspan="3" class="colspan"><iframe scrolling="no" width=100% height=100 name="obszar_logo" src="logo_warkusz.html"></iframe></td>
+			</tr>
+			<tr>
+                <td style="width: 18%;">
+                    <ul align=center>
+                        <li>
+                            <a href="javascript:void(0)" onclick="parent.obszar_glowny.location.href ='https://policja.gov.pl';return false">Polska policja</a>
+                        </li>
+                        <li>
+                            <a href="https://zse.edu.gdansk.pl" target="obszar_glowny">Strona szkoły</a>
+                        </li>
+                    </ul>
+                </td>
+                <td class="center" align="center"><iframe width=650 height=420 name="obszar_glowny"
+                    src="glowny_warkusz.html"></iframe>
+                    </td>
+                <td style="width: 18%;" align="center">
+                    <map id="mapa_warkusz">
+                        <area shape="circle" coords="47,31,20" href="zip.zip" download>
+                        <area shape="rect" coords="11,70,85,105" href="tabela_warkusz.html" target="obszar_glowny">
+                        <area shape="poly" coords="46,119,25,158,67,158" href="formularz_warkusz.html" target="obszar_glowny">
+                        <area shape="rect" coords="9,176,89,215" href="poczta_warkusz.html" target="obszar_glowny">
+                        <area shape="circle" coords="47,253,20" href="index.html" target="obszar_glowny">
+                    </map>
+                    <img src="mapa_warkusz.gif" alt="tutaj wybieraj linki" usemap="#mapa_warkusz">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="colspan"><iframe scrolling="no" width=900 height=90 name="obszar_stopka" src="stopka_warkusz.html"></iframe></td>
+            </tr>
+		</tbody>
+	</table>
+</body>
+</html>
